@@ -1,3 +1,5 @@
+package game;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -63,6 +65,7 @@ class GamePanel extends JPanel implements ActionListener, KeyListener {
         } else {
             gameOver(g);
         }
+    }
 
     public void newApple() {
         appleX = random.nextInt((SCREEN_WIDTH / UNIT_SIZE)) * UNIT_SIZE;
@@ -155,5 +158,3 @@ class GamePanel extends JPanel implements ActionListener, KeyListener {
     @Override public void keyTyped(KeyEvent e) {}
 }
 
-
-}
